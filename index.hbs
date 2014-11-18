@@ -1,15 +1,22 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-<!-- Header and Nav -->
+{{! The big featured header }}
 
- 
-  <div class="row">
- 
-    <div class="large-12 columns">
-      <h1><img src="{{@blog.logo}}" alt="Blog Logo" /></h1>
-    </div>
-<ul class="genre">
+
+
+<div class="row first">
+	<div class="large-6 small-3 columns">
+		
+		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+		
+		
+	</div>
+	<div class="large-6 small-3 columns">
+			<div class="row second">
+					<div class="large-12 small-3 columns">
+						
+						<ul class="genre">
 							<li><a href="electronic.asp">Electronic</a></li>
 							<li><a href="indie.asp">Indie</a></li>
 							<li><a href="folk.asp">Folk</a></li>
@@ -22,81 +29,45 @@
 									<li><a href="2013.asp">2013</a></li>
 									<li><a href="2014.asp">2014</a></li>
 									<li><a href="2015.asp">2015</a></li>
-	</ul>
-  </div>
-	
-	
-	
-	
-	
-   </div>
+						</ul>
+						
+						
+						
+						
+					</div>
+			</div>
+			<div class="row third">
+					<div class="large-12 columns">
+							<strong class="show-for-medium-up">
+							<div class="img-logos">
+							<ul class="inline-list">
+								<li class="facebook"><a href="https://www.facebook.com/mustknowbands?ref=hl"><img src="{{asset "/img/fb_logo.png"}}"></a></li>
+								<li class="twitter"><a href="https://twitter.com/MustKnowBands"><img src="{{asset "/img/twitter_logo.png"}}" width="29" height="29"></a></li>
+								<li class="instagram"><a href="http://instagram.com/mustknowbands"><img src="{{asset "/img/instagram_logo.png"}}"  width="29" height="29"></a></li>
+							</ul>
+							</div>
+							</strong>
+					</div>
+		
+			</div>
+			
+			<div class="row fourth">
+					<div class="large-12 columns">
+							<strong class="show-for-medium-up">
+							
+							<div class="search-toggle">
+							<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'twentyfourteen' ); ?></a>
+							</div>
+							
+							</strong>
+					</div>	
+							
+			</div>	
 
 
-
-<div class="row">
-  <div class="large-3 columns">
-    
-  
-  
-  
-  
-  <div class="large-9 columns">
-       
-</div>
-  
-
-<!-- First Band (Image) -->
-
-<div class="row">
-  <div class="large-12 columns">
-    <!-- large center image -->
-  </div>
-</div>
-
-<!-- Second Band (Image Left with Text) -->
-
-<div class="row">
-  <div class="large-4 columns">
-    <!-- left image -->
-  </div>
-  <div class="large-8 columns">
-    <!-- text content -->
-  </div>
 </div>
 
-<!-- Third Band (Image Right with Text) -->
-
-<div class="row">
-  <div class="large-8 columns">
-    <!-- text content -->
-  </div>
-  <div class="large-4 columns">
-    <!-- right image -->
-  </div>
 </div>
-
-<!-- Footer -->
-
-<footer class="row">
-  <div class="large-12 columns">
-    <div class="row">
-      <div class="large-6 columns">
-        <!-- copyright -->
-      </div>
-      <div class="large-6 columns">
-        <!-- footer links -->
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-
-
-
-
-
 
 
 
@@ -111,3 +82,12 @@
     {{> "loop"}}
 
 </main>
+
+
+
+
+
+
+
+
+
