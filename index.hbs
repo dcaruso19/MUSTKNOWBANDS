@@ -1,0 +1,113 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<!-- Header and Nav -->
+
+ 
+  <div class="row">
+ 
+    <div class="large-12 columns">
+      <h1><img src="{{@blog.logo}}" alt="Blog Logo" /></h1>
+    </div>
+<ul class="genre">
+							<li><a href="electronic.asp">Electronic</a></li>
+							<li><a href="indie.asp">Indie</a></li>
+							<li><a href="folk.asp">Folk</a></li>
+							<li><a href="psychedelic.asp">Psychedelic</a></li>
+							<li><a href="rock.asp">Rock</a></li>
+							<li><a href="reggae.asp">Reggae</a></li>
+							<li><a href="rap.asp">Rap</a></li>
+							<li><a href="album_reviews.asp">Album Reviews</a></li>
+								<ul class="year">
+									<li><a href="2013.asp">2013</a></li>
+									<li><a href="2014.asp">2014</a></li>
+									<li><a href="2015.asp">2015</a></li>
+	</ul>
+  </div>
+	
+	
+	
+	
+	
+   </div>
+
+
+
+<div class="row">
+  <div class="large-3 columns">
+    
+  
+  
+  
+  
+  <div class="large-9 columns">
+       
+</div>
+  
+
+<!-- First Band (Image) -->
+
+<div class="row">
+  <div class="large-12 columns">
+    <!-- large center image -->
+  </div>
+</div>
+
+<!-- Second Band (Image Left with Text) -->
+
+<div class="row">
+  <div class="large-4 columns">
+    <!-- left image -->
+  </div>
+  <div class="large-8 columns">
+    <!-- text content -->
+  </div>
+</div>
+
+<!-- Third Band (Image Right with Text) -->
+
+<div class="row">
+  <div class="large-8 columns">
+    <!-- text content -->
+  </div>
+  <div class="large-4 columns">
+    <!-- right image -->
+  </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="row">
+  <div class="large-12 columns">
+    <div class="row">
+      <div class="large-6 columns">
+        <!-- copyright -->
+      </div>
+      <div class="large-6 columns">
+        <!-- footer links -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{! The main content area on the homepage }}
+<main id="content" class="content" role="main">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>
