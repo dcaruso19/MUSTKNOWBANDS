@@ -6,67 +6,62 @@
 
 
 <div class="row first">
-	<div class="large-6 small-3 columns">
-		
-		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-		
-		
-	</div>
-	<div class="large-6 small-3 columns">
-			<div class="row second">
-					<div class="large-12 small-3 columns">
-						
-						<ul class="genre">
-							<li><a href="electronic.asp">Electronic</a></li>
-							<li><a href="indie.asp">Indie</a></li>
-							<li><a href="folk.asp">Folk</a></li>
-							<li><a href="psychedelic.asp">Psychedelic</a></li>
-							<li><a href="rock.asp">Rock</a></li>
-							<li><a href="reggae.asp">Reggae</a></li>
-							<li><a href="rap.asp">Rap</a></li>
-							<li><a href="album_reviews.asp">Album Reviews</a></li>
-								<ul class="year">
-									<li><a href="2013.asp">2013</a></li>
-									<li><a href="2014.asp">2014</a></li>
-									<li><a href="2015.asp">2015</a></li>
-						</ul>
-						
-						
-						
-						
-					</div>
-			</div>
-			<div class="row third">
-					<div class="large-12 columns">
-							<strong class="show-for-medium-up">
-							<div class="img-logos">
-							<ul class="inline-list">
-								<li class="facebook"><a href="https://www.facebook.com/mustknowbands?ref=hl"><img src="{{asset "/img/fb_logo.png"}}"></a></li>
-								<li class="twitter"><a href="https://twitter.com/MustKnowBands"><img src="{{asset "/img/twitter_logo.png"}}" width="29" height="29"></a></li>
-								<li class="instagram"><a href="http://instagram.com/mustknowbands"><img src="{{asset "/img/instagram_logo.png"}}"  width="29" height="29"></a></li>
-							</ul>
-							</div>
-							</strong>
-					</div>
-		
-			</div>
-			
-			<div class="row fourth">
-					<div class="large-12 columns">
-							<strong class="show-for-medium-up">
-							
-							<div class="search-toggle">
-							<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'twentyfourteen' ); ?></a>
-							</div>
-							
-							</strong>
-					</div>	
-							
-			</div>	
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <!-- <h1><a href="#">My Site</a></h1> -->
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
 
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="/electronic">Electronic</a></li>
+                <li><a href="#">Indie</a></li>
+                <li><a href="#">Folk</a></li>
+                <li><a href="#">Psychedelic</a></li>
+                <li><a href="#">Rock</a></li>
+                <li><a href="#">Reggae</a></li>
+                <li><a href="#">Rap</a></li>
+                <li><a href="#">Album Reviews</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Years</a>
+                    <ul class="dropdown">
+                        <li><a href="#">2013</a></li>
+                        <li><a href="#">2014</a></li>
+                        <li><a href="#">2015</a></li>
+                    </ul>
+                </li>
+            </ul>
 
+            <!-- Left Nav Section -->
+            <ul class="left">
+             <!--  <li><a href="#">Left Nav Button</a></li> -->
+            </ul>
+          </section>
+        </nav>
+    </div>
 </div>
-
+<div class="row second">
+	<div class="large-8 small-12 columns">
+		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" width="50%" height="50%" alt="Blog Logo" /></a>{{/if}}
+    </div>
+    <div class="large-4 small-12 columns right">
+        <div class="row third">
+            <div class="large-12 columns">
+                <div class="img-logos">
+                    <ul class="inline-list">
+                        <li class="facebook"><a href="https://www.facebook.com/mustknowbands?ref=hl"><img src="{{asset "/img/fb_logo.png"}}"></a></li>
+                        <li class="twitter"><a href="https://twitter.com/MustKnowBands"><img src="{{asset "/img/twitter_logo.png"}}" width="29" height="29"></a></li>
+                        <li class="instagram"><a href="http://instagram.com/mustknowbands"><img src="{{asset "/img/instagram_logo.png"}}"  width="29" height="29"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -76,11 +71,10 @@
 
 
 {{! The main content area on the homepage }}
-<main id="content" class="content" role="main">
 
+<main id="content" class="content" role="main">
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}
-
 </main>
 
 
