@@ -9,10 +9,7 @@ body {
 } 
 
 
-li {
-display:inline;
 
-}
 
 a{
 color:aqua;
@@ -94,6 +91,7 @@ background:black;
 
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
 background:black;
+color:aqua;
 }
 
 main#content.content{
@@ -115,3 +113,24 @@ font-size: 1.8rem;
 ul.dropdown{
 background:black;
 }
+
+img.full-img{
+margin-top:2rem;
+}
+
+ @media only screen and (max-width: 40em) {
+#main-logo{
+width: 130%;
+ }
+.twitter{
+height:20px;
+width:20px;
+}
+
+
+
+ }
+ 
+ 
+ 
+ 

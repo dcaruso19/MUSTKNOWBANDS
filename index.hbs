@@ -20,19 +20,19 @@
             <!-- Right Nav Section -->
             <ul class="right">
                 <li><a href="/electronic">Electronic</a></li>
-                <li><a href="#">Indie</a></li>
-                <li><a href="#">Folk</a></li>
-                <li><a href="#">Psychedelic</a></li>
-                <li><a href="#">Rock</a></li>
-                <li><a href="#">Reggae</a></li>
-                <li><a href="#">Rap</a></li>
-                <li><a href="#">Album Reviews</a></li>
+                <li><a href="/indie">Indie</a></li>
+                <li><a href="/folk">Folk</a></li>
+                <li><a href="/psychedelic">Psychedelic</a></li>
+                <li><a href="/rock">Rock</a></li>
+                <li><a href="/reggae">Reggae</a></li>
+                <li><a href="/rap">Rap</a></li>
+                <li><a href="/albumreviews">Album Reviews</a></li>
                 <li class="has-dropdown">
-                    <a href="#">Years</a>
+                    <a href="years">Years</a>
                     <ul class="dropdown">
-                        <li><a href="#">2013</a></li>
-                        <li><a href="#">2014</a></li>
-                        <li><a href="#">2015</a></li>
+                        <li><a href="2013">2013</a></li>
+                        <li><a href="2014">2014</a></li>
+                        <li><a href="2015">2015</a></li>
                     </ul>
                 </li>
             </ul>
@@ -47,7 +47,10 @@
 </div>
 <div class="row second">
 	<div class="large-8 small-12 columns">
-		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" width="80%" height="80%" alt="Blog Logo" /></a>{{/if}}
+		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}">
+		<div id="main-logo">
+		<img src="{{@blog.logo}}" width="80%" height="80%" alt="Blog Logo" /></a>{{/if}}
+		</div>
     </div>
     <div class="large-4 small-12 columns right">
         <div class="row third">
