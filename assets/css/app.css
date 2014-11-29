@@ -1,5 +1,10 @@
 p {
-font-size:1.0rem;
+font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
 color:white;
 }
 
@@ -54,8 +59,46 @@ display:none;
 
 div.large-12.small-12.columns {
 margin-bottom:5rem;
+background:#505555;
 }
 
+
+
+div.large-12.small-12.columns.footer {
+background:black;
+}
+
+div.large-8.small-12.columns.twitter {
+background:black;
+margin-bottom:6rem;
+}
+
+div.large-8.small-12.columns {
+margin-bottom:10rem;
+}
+
+div.large-8.small-12.loop {
+margin-bottom:6rem;
+}
+
+
+div.large-12.small-12.columns.back-logo {
+background:black;
+}
+
+
+div.large-8.small-12.loop {
+background:#505555;
+}
+
+/* div.row{
+background:#00CED1;
+}
+
+div.row.second{
+background:black;
+}
+ */
 time.post-date {
 color:#2FF05D;
 margin-left:1rem;
@@ -125,10 +168,18 @@ font-size: 3.25rem;
 color:#2FF05D;
 text-align: center; 
 margin:4rem;
+font-family: Verdana, Geneva, sans-serif;
 }
 
 h2.post-title{
 font-size: 1.8rem;
+margin-top:1.2rem;
+font-family: Verdana, Geneva, sans-serif;
+}
+
+h1.page-title{
+text-align:center;
+color:white;
 }
 
 
@@ -145,6 +196,7 @@ time.post-date {
 color: #2FF05D;
 margin-left: auto;
 margin-top:.5rem;
+margin-bottom:.5rem;
 display: block;
 }
 
@@ -222,17 +274,18 @@ color:white;
 
 
 div#post-image img.full-img {
-max-width:20rem;
+max-width:35rem;
 max-height:20rem;
+display:block;
 margin-left:auto;
 margin-right:auto;
 margin-top:4rem;
 margin-bottom:4rem;
 }
 
-section.post-excerpt p{
+/* section.post-excerpt p{
 max-width:24rem;
-}
+} */
 
 section.post-content {
 text-align:center;
@@ -240,11 +293,13 @@ text-align:center;
 
 section.post-meta {
 text-align:center;
+color:white;
 }
 
 
-#disqus.thread{
+div#disqus_thread{
 background:white;
+margin-top:10rem;
 }
 
 
@@ -268,14 +323,24 @@ margin-left:auto;
 margin-right:auto;
 margin-top: 4rem;
 }
+
+
+
+
+nav.pagination{
+margin-bottom:8rem;
 }
 
-
-
-/* nav.pagination{
-display:none;
+a.older-posts{
+font-size:2rem;
+position:relative;
+float:right;
 }
- */
+
+a.newer-posts{
+font-size:2rem;
+}
+
 
  @media only screen and (max-width: 40em) {
 

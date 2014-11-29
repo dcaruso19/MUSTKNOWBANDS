@@ -1,16 +1,9 @@
-{{! Previous/next page links - only displayed on page 2+ }}
-<div class="row">
-    <div class="large-12 small-12 columns">
-        <div class="extra-pagination inner">
-            {{pagination}}
-        </div>
-    </div>
-</div>
+
 
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 <div class="row">
-    <div class="large-12 small-12 columns">
+    <div class="large-8 small-12 columns loop">
         <article class="{{post_class}}">
             <header class="post-header">
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
@@ -20,7 +13,7 @@
 				<a class="read-more" href="{{url}}"><img src={{image}}></a>
 					
 				</div>
-                <p>{{excerpt words="26"}} </p>
+                <p>{{excerpt words="40"}}... </p>
             </section>
             <footer class="post-meta">
                 {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
@@ -35,7 +28,7 @@
 
 {{! Previous/next page links - displayed on every page }}
 <div class="row">
-    <div class="large-12 small-12 columns">
+    <div class="large-8 small-12 columns twitter">
 {{pagination}}
 
 <a class="twitter-timeline" href="https://twitter.com/MustKnowBands" data-widget-id="536769928595275776">Tweets by @MustKnowBands</a>

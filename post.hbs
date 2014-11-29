@@ -6,12 +6,16 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    </nav>
-</header>
+<div class="row">
+	<div class="large-12 small-12 columns back-logo">
+		<header class="main-header post-head">
+			<nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+				<a class="back-button icon-arrow-left" href="{{@blog.url}}"><img src ="{{asset "/img/danlogo.png"}}" width="120" height="120"></a>
+				
+			</nav>
+		</header>
+	</div>
+</div>
 
 <main class="content" role="main">
     <div class="row">
