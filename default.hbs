@@ -40,13 +40,14 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
+	
     <footer class="site-footer clearfix">
 	
         <div class="row">
             <div class="large-12 small-12 columns footer">
                 <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
                 <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-				<img class="logo"><a href="{{@blog.url}}"><img src="{{asset "/img/danlogo.png"}}" width="80" height="80" style=" background:black;"></a></li>
+				<img class="logo"><a href="{{@blog.url}}"><img src="{{asset "/img/danlogo.png"}}" width="80" height="80" style=" background:black;" class="alt-logo"></a></li>
             </div>
         </div>
     </footer>
@@ -60,6 +61,11 @@
 
     <script src="{{asset "js/foundation.min.js"}}"></script>
     <script src="{{asset "js/foundation/foundation.interchange.js"}}"></script>
+	
+	 {{! for unslider }}
+	<script src="{{asset "//code.jquery.com/jquery-latest.min.js"}}"></script>
+	<script src="{{asset "//unslider.com/unslider.min.js"}}"></script>
+	
     <script>
         $(document).foundation();
     </script>
