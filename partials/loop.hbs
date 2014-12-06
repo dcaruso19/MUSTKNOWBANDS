@@ -1,37 +1,131 @@
 
 
 {{! This is the post loop - each post will be output using this markup }}
+
+<div class="row">
+    <div class="large-8 columns">
+
+    <section id="results" style="text-align:left">
+    </section>
+
+        
+
+<div id="allposts">
+
 {{#foreach posts}}
-<div class="row">
-    <div class="large-8 small-12 columns loop">
-        <article class="{{post_class}}">
-            <header class="post-header">
-                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-            </header>
-            <section class="post-excerpt">
-				<div id="post-image">
-				<a class="read-more" href="{{url}}"><img src={{image}} class="post-image"></a>
-					
-				</div>
-                <p>{{excerpt words="40"}}... </p>
-            </section>
-            <footer class="post-meta">
-                {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
-                {{author}}
-                {{tags prefix=" on "}}
-                <time class="post-date" datetime="{{date format='MMMM-DD-YYYY'}}">{{date format="MMMM DD, YYYY"}}</time>
-            </footer>
-        </article>
+
+        <div class="row">
+            <div class="small-12 columns loop">
+                <article class="{{post_class}}">
+                    <header class="post-header">
+                        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                    </header>
+                    <section class="post-excerpt">
+        				<div id="post-image">
+        				    <a class="read-more" href="{{url}}"><img src={{image}} class="post-image"></a>
+        				</div>
+                        <p class=excerpt-paragraph>{{excerpt words="40"}}... </p>
+                    </section>
+                    <footer class="post-meta">
+                        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
+                        {{author}}
+                        {{tags prefix=" on "}}
+                        <time class="post-date" datetime="{{date format='MMMM-DD-YYYY'}}">{{date format="MMMM DD, YYYY"}}</time>
+                    </footer>
+                </article>
+            </div>
+
+        </div>
+
+        {{/foreach}}
+</div>
+
+		{{! Previous/next page links - displayed on every page }}
+        	<div class="row">
+            	<div class="small-12 columns twitter">
+        			{{pagination}}
+           		</div>
+        	</div>
+    </div>
+
+
+
+    
+    <div class="large-4 columns sidebar">
+        <div class="row">
+            <div class="small-12 columns about-me">
+                <h5 class="about-me">About Me</h5>
+                    <p class="about-me-p">My name is Dan Caruso from Long Island, NY. If you want to know more about the freshest new bands and artists, you have come to the right place!</p>  
+            </div>  
+        <div class="row">
+            <div class="small-12 columns twitter">
+                 <a class="twitter-timeline" href="https://twitter.com/MustKnowBands" data-widget-id="536769928595275776">Tweets by @MustKnowBands</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                    </script>
+            </div>
+        
+        <div class="row">
+            <div class="small-12 columns adsense1">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Rectangle Ad -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:600px"
+                     data-ad-client="ca-pub-4468771716232038"
+                     data-ad-slot="8190881107"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <div class="small-12 columns adsense2">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Rectangle Ad -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:600px"
+                     data-ad-client="ca-pub-4468771716232038"
+                     data-ad-slot="8190881107"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <div class="small-12 columns adsense3">                 
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- mkb -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:320px;height:100px"
+                         data-ad-client="ca-pub-4468771716232038"
+                         data-ad-slot="7838274300"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+            
+            </div>
+            <div class="small-12 columns adsense4">                 
+                      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- Drive2 Medium Rectangle -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:300px;height:250px"
+                             data-ad-client="ca-pub-4468771716232038"
+                             data-ad-slot="3713322302"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                                
+            </div>
+
+       
+       
+        </div>
+        </div>
+        </div>
     </div>
 </div>
-{{/foreach}}
 
-{{! Previous/next page links - displayed on every page }}
-<div class="row">
-    <div class="large-8 small-12 columns twitter">
-{{pagination}}
+        
 
-<a class="twitter-timeline" href="https://twitter.com/MustKnowBands" data-widget-id="536769928595275776">Tweets by @MustKnowBands</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-</div>
+        
+       
+            
+        
+
+ 
