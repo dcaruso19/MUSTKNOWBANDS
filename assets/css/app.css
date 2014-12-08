@@ -31,6 +31,10 @@ input.search {
     font-weight: bold;
 }
 
+input[type="submit"] {
+-webkit-appearance: initial;
+-webkit-border-radius: 20px;
+}
 
 a {
     color:aqua;
@@ -134,6 +138,10 @@ div.large-12.columns.twitter{
 /* padding-right: 0px; */
 }
 
+div.large-12.columns.youtube{
+	padding-left: 6.5rem;
+	margin-top: 10rem;
+}
 
 div.large-12.columns.social {
    /*  padding-right:0px; */
@@ -187,6 +195,7 @@ div.small-12.columns.adsense4{
     padding-right: 0rem;
     padding-top: 12rem;
 }
+
 
 /* div.row{
 background:#00CED1;
@@ -256,6 +265,7 @@ footer.post-footer {
 
 .top-bar-section li:not(.has-form) a:not(.button) {
     background:black;
+    padding-top:5px;
 }
 
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
@@ -505,9 +515,16 @@ li.toggle-topbar.menu-icon {
 }
 
 
+h2.results{
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
 
-
-
+h4.results{
+	color:#2FF05D;
+	font-size: 16px;
+}
 
 
  @media only screen and (max-width: 40em) {
@@ -774,6 +791,17 @@ img.danlogo {
 
 p.excerpt-paragraph{
 	font-size: 90%;
+}
+
+div.large-12.columns.youtube {
+padding-left: 2rem;
+padding-right: 2rem;
+margin-top: 4rem;
+text-align: center;
+}
+
+a.about-me {
+	display: inherit;
 }
 
  }

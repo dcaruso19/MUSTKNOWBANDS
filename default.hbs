@@ -79,7 +79,7 @@
 <div class="row second">
     <div class="large-8 small-12 columns">
         <a href="{{@blog.url}}"> 
-        <img data-interchange="[{{asset "/img/danlogo.png"}}, (default)], [{{asset "/img/biggertext-white.png"}}, (medium)]" class="danlogo">
+        <img data-interchange="[{{asset "/img/danlogo.png"}}, (default)], [{{asset "/img/mkb plain headphones-right2.png"}}, (medium)]" class="danlogo">
         </a>
 
     </div>
@@ -115,9 +115,11 @@
                     $("#search-field").ghostHunter({
                         results   : "#results",
                         displaySearchInfo   : false,
-                        result_template : "<a href='\{{link}}'><p><h2>\{{title}}</h2><h4>\{{pubDate}}</h4>\{{description}}</p></a>",
+                        result_template : "<h2 class='results'><a href='\{{link}}'>\{{title}}</a></h2><h4 class='results'>\{{pubDate}}</h4>",
+                        zeroResultsInfo     : false,
                         onComplete : function(results){
                             $("#allposts").empty()
+                            $(".older-posts").empty()
                         }
                         
                        
