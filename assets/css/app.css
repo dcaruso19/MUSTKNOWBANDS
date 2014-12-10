@@ -22,6 +22,8 @@ body {
 h5.about-me {
 	color:#F500FF;
 	text-shadow: 1px 1px 85px #FFF;
+	font-family: mistral;
+	font-size: 1.5rem;
 	/* text-align: center; */
 }
 
@@ -53,6 +55,17 @@ a:link {
 /* img.full-img{
 height:15rem;
 } */
+
+/* ul.left{
+margin-bottom: 2rem;
+margin-top: -4rem;
+
+} */
+
+nav.top-bar.expanded{
+	margin-bottom: 2rem;
+
+}
 
 
 .top-bar {
@@ -96,6 +109,10 @@ div.large-8.small-12.columns.twitter {
 
 div.large-8.small-12.columns {
     margin-bottom:4rem;
+}
+
+div.large-8.small-12.columns.logo {
+    padding-left: 0;
 }
 
 div.large-8.small-12.loop {
@@ -143,10 +160,10 @@ div.large-12.columns.youtube{
 	margin-top: 10rem;
 }
 
-div.large-12.columns.social {
-   /*  padding-right:0px; */
+/* div.large-12.columns.social {
+    padding-right:10px; 
 
-}
+} */
 
 div.large-4.small-12.columns.social {
     width: 11rem;
@@ -154,14 +171,44 @@ div.large-4.small-12.columns.social {
     margin-top: 1.5rem;
 }
 
+div.large-12.columns.search {
+	padding-right: 5px;
+}
+
+ul.inline-list.social {
+	margin-left:8px;
+}
+
+}
 div.row.third {
     float: right;
+ 	margin-left: -10px;
 }
 
 iframe#twitter-widget-1.twitter-timeline.twitter-timeline-rendered {
 	width:235px;
 }
 
+/* iframe{
+margin-left: 15rem;
+margin-right: 15rem;
+} */
+
+ iframe.spotify-player {
+margin-left:auto;
+margin-right: auto; 
+display: block;
+} 
+
+section.post-content img{
+margin-bottom: 2rem;
+max-height: 100%;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+
+}
 
 h6 {
     font-size:2rem;
@@ -216,10 +263,10 @@ time.current-post-date {
 }
 
 section.post-content {
-    max-width:80%;
+    max-width:95%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 img.alt-logo{
@@ -297,9 +344,11 @@ h2.post-title{
 h1.page-title{
     text-align:center;
     color:#F500FF;
-    font-weight:bolder;
+    /* font-weight:bolder; */
     text-transform: capitalize;
     text-shadow: 1px 1px 100px #FFF;
+    font-family: mistral;
+    font-size: 4rem;
 }
 
 input#search-field{
@@ -425,8 +474,9 @@ div#post-image img.full-img {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    margin-top:4rem;
-    margin-bottom:4rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+
 }
 
 /* section.post-excerpt p{
@@ -436,6 +486,8 @@ max-width:24rem;
 section.post-content p {
     /* text-align:center; */
     text-indent: 50px;
+    padding-left: 4rem;
+	padding-right: 4rem;
 }
 
 section.post-meta {
@@ -485,13 +537,15 @@ nav.pagination {
 }
 
 a.older-posts {
-    font-size:2rem;
-    position:relative;
-    float:right;
+   	font-size: 3rem;
+	position: relative;
+	float: right;
+	font-family: mistral;
 }
 
 a.newer-posts{
-    font-size:2rem;
+    font-size: 3rem;
+    font-family: mistral;
 }
 
 
@@ -525,6 +579,97 @@ h4.results{
 	color:#2FF05D;
 	font-size: 16px;
 }
+
+
+section.copyright a {
+	font-family: mistral;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+div.small-12.columns.adsense1{
+display: none;
+}
+
+
+div.small-12.columns.adsense2{
+display: none;
+}
+
+
+
+
+
+img.danlogo.full-img {
+
+display:block;
+margin-right: auto;
+margin-left: auto;
+}
+
+div.small-12.loop {
+background: #505555;
+margin-bottom: 2rem;
+margin-left: 2rem;
+margin-right: 14rem;
+display: block;
+padding-right: 10rem;
+max-width: 28rem;
+padding-left: inherit;
+padding-right: inherit;
+margin-top: -7rem;
+}
+
+footer.post-meta {
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+}
+
+p.excerpt-paragraph {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+div.large-4.small-12.columns.social {
+
+width: 11rem;
+padding-right: 0;
+margin-bottom: -1rem;;
+margin-right: 2rem;
+margin-top: 5.5rem;
+}
+
+div.large-8.small-12.columns {
+margin-bottom: -5rem;
+}
+
+top-bar-section ul {
+padding: 0;
+width: 100%;
+height: auto;
+display: block;
+font-size: 16px;
+margin-left: 1rem;
+margin-right: auto;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+padding: 0 15px;
+line-height: 45px;
+
+font-size: 11.3px;
+
+}
+
+
 
 
  @media only screen and (max-width: 40em) {
@@ -769,6 +914,8 @@ height: 45px;
 margin: 0;
 font-size: 16px;
 background: #000;
+margin-bottom: -4rem;
+
 }
 
  div.large-4.small-12.columns.social {
@@ -778,7 +925,8 @@ margin-top: -2rem;
 }
 
 h1.page-title{
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
+	font-size:3rem;
 }
 
 img.danlogo {
@@ -791,6 +939,7 @@ img.danlogo {
 
 p.excerpt-paragraph{
 	font-size: 90%;
+	text-indent: 20px;
 }
 
 div.large-12.columns.youtube {
@@ -803,6 +952,30 @@ text-align: center;
 a.about-me {
 	display: inherit;
 }
+
+/* li.name {
+	margin-bottom: -4rem;
+}
+ */
+
+ul.inline-list.social{
+	margin-left: 25px;
+}
+
+section.post-content p {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
  }
  

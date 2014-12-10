@@ -50,7 +50,11 @@
           <section class="top-bar-section">
             <!-- Right Nav Section -->
             <ul class="right">
-                <li><a href="/tag/electronic">Electronic</a></li>
+                
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+            <li><a href="/tag/electronic">Electronic</a></li>
                 <li><a href="/tag/indie">Indie</a></li>
                 <li><a href="/tag/folk">Folk</a></li>
                 <li><a href="/tag/psychedelic">Psychedelic</a></li>
@@ -67,19 +71,16 @@
                     </ul>
                 </li>
             </ul>
-
-            <!-- Left Nav Section -->
-            <ul class="left">
              <!--  <li><a href="#">Left Nav Button</a></li> -->
-            </ul>
+            
           </section>
         </nav>
     </div>
 </div>
 <div class="row second">
-    <div class="large-8 small-12 columns">
+    <div class="large-8 small-12 columns logo">
         <a href="{{@blog.url}}"> 
-        <img data-interchange="[{{asset "/img/danlogo.png"}}, (default)], [{{asset "/img/mkb plain headphones-right2.png"}}, (medium)]" class="danlogo">
+        <img data-interchange="[{{asset "/img/danlogo.png"}}, (default)],[{{asset "img/medium-headphones.png"}}, (medium)]  [{{asset "/img/mkb-main.png"}}, (large)]" class="danlogo">
         </a>
 
     </div>
@@ -87,7 +88,7 @@
         <div class="row third">
             <div class="large-12 columns social">
                 <div class="img-logos">
-                    <ul class="inline-list">
+                    <ul class="inline-list social">
                         <li class="facebook"><a href="https://www.facebook.com/mustknowbands?ref=hl"><img src="{{asset "/img/fb_logo.png"}}"></a></li>
                         <li class="twitter"><a href="https://twitter.com/MustKnowBands"><img src="{{asset "/img/twitter_logo.png"}}" width="29" height="29"></a></li>
                         <li class="instagram"><a href="http://instagram.com/mustknowbands"><img src="{{asset "/img/instagram_logo.png"}}"  width="29" height="29"></a></li>
