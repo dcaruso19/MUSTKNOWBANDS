@@ -20,11 +20,14 @@ body {
 
 
 h5.about-me {
-	color:#F500FF;
-	text-shadow: 1px 1px 85px #FFF;
-	font-family: mistral;
-	font-size: 1.5rem;
-	/* text-align: center; */
+color: #F500FF;
+text-shadow: 1px 1px 85px #FFF;
+font-family: mistral;
+font-size: 1.5rem;
+margin-bottom: 8px;
+margin-right: 21px;
+padding-left: 0;
+margin-left: 0;
 }
 
 input.search {
@@ -34,7 +37,7 @@ input.search {
 }
 
 input[type="submit"] {
--webkit-appearance: initial;
+
 -webkit-border-radius: 20px;
 }
 
@@ -102,7 +105,7 @@ div.large-12.small-12.columns.footer {
 background:black;
 }
 
-div.large-8.small-12.columns.twitter {
+.twitter {
     background:black;
     margin-bottom:6rem;
 }
@@ -115,7 +118,7 @@ div.large-8.small-12.columns.logo {
     padding-left: 0;
 }
 
-div.large-8.small-12.loop {
+.loop {
     margin-bottom:4rem;
 }
 
@@ -125,7 +128,7 @@ div.large-12.small-12.columns.back-logo {
 }
 
 
-div.small-12.loop {
+.loop {
     background:#505555;
     margin-bottom: 2rem;
 }
@@ -140,39 +143,41 @@ div.large-4.columns.sidebar{
 	/* margin-top: 34.2rem; */
 }
 
-div.small-12.columns.about-me {
-	padding-left: 75px;
-	padding-right: 0px;
-	margin-bottom: 5rem;
-}
-
-div.small-12.columns.twitter{
-padding-left: 90px;
+.about-me{
+padding-left: 66px;
 padding-right: 0px;
+margin-bottom: 3rem;
+margin-left: 0rem;
+margin-top: 2rem;
+
 }
 
-div.large-12.columns.twitter{
-/* padding-right: 0px; */
+.twitter {
+margin-left: 3.2rem;
+margin-bottom: 0;
+padding-right: 2rem;
+
 }
 
-div.large-12.columns.youtube{
-	padding-left: 6.5rem;
-	margin-top: 10rem;
+.youtube{
+padding-left: 4rem;
+margin-top: 10rem;
 }
 
-/* div.large-12.columns.social {
+/*.social {
     padding-right:10px; 
 
 } */
 
-div.large-4.small-12.columns.social {
+.social {
     width: 11rem;
     padding-right: 0;
-    margin-top: 1.5rem;
+    margin-top: .6rem;
 }
 
-div.large-12.columns.search {
+.search {
 	padding-right: 5px;
+    margin-left: 4px;
 }
 
 ul.inline-list.social {
@@ -221,24 +226,24 @@ div.adsense{
     text-align:center;
 }
 
-div.small-12.columns.adsense1{
-    padding-left:6.5rem;
+.adsense1{
+    padding-left:4rem;
     padding-right: 0rem;
     padding-top: 12rem;
 }
 
-div.small-12.columns.adsense2{
-    padding-left:6.5rem;
+.adsense2{
+    padding-left:4rem;
     padding-right: 0rem;
     padding-top: 12rem;
 }
 
-div.small-12.columns.adsense3{
+.adsense3{
     display: none;
 }
 
-div.small-12.columns.adsense4{
-    padding-left:6.5rem;
+.adsense4{
+    padding-left:4rem;
     padding-right: 0rem;
     padding-top: 12rem;
 }
@@ -330,6 +335,7 @@ h1.post-title {
     text-align: center; 
     margin:4rem;
     font-family: Gill Sans MT, Geneva, sans-serif;
+    padding-top: 2rem;
 }
 
 h2.post-title{
@@ -587,50 +593,115 @@ section.copyright a {
 }
 
 
+.youtube-tablet{
+    display: none;
 
+}
 
-
-
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-
-
-div.small-12.columns.adsense1{
-display: none;
+.adsense5{
+    display: none;
 }
 
 
-div.small-12.columns.adsense2{
+ @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+
+
+.adsense1{
 display: none;
 }
 
+.adsense5{
+    display: inherit;
+    padding-left: 25px;
+    margin-left: 4.5rem;
+    margin-bottom: 0;
+    margin-right: -3rem;
+    margin-top: 6rem;
+    }
+
+.youtube{
+    display: none;
+}
+
+.youtube-tablet{
+    display: inherit;
+    margin-top: 4rem;
+    padding-left: 4px;
+    margin-left: 4.5rem;
+    margin-bottom: 0;
+    margin-right: 14rem;
+    padding-right: 5.5rem;
+}
+
+h1.post-title {
+font-size: 1.8rem;
+color: #F500FF;
+text-align: center;
+margin: 4rem;
+font-family: Gill Sans MT, Geneva, sans-serif;
+padding-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.post{
+    margin-top:2rem;
+}
 
 
+img.post-image {
+max-height: 25rem;
+max-width: 30rem;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 4rem;
+margin-bottom: -2rem;
+}
 
+.adsense2{
+display: none;
+} 
+
+.adsense4{
+display: none;
+} 
+
+h5.about-me{
+margin-left: 0rem;
+}
 
 img.danlogo.full-img {
-
-display:block;
+display: block;
 margin-right: auto;
-margin-left: auto;
+margin-left: 2rem;
+height: auto;
+max-width: 100%;
+
 }
 
-div.small-12.loop {
+.logo{
+    margin-left:1rem;
+}
+
+.loop {
 background: #505555;
 margin-bottom: 2rem;
 margin-left: 2rem;
 margin-right: 14rem;
 display: block;
 padding-right: 10rem;
-max-width: 28rem;
+max-width: 36rem;
 padding-left: inherit;
 padding-right: inherit;
-margin-top: -7rem;
+margin-top: 1rem;
 }
 
 footer.post-meta {
-	padding-left: 1.2rem;
-	padding-right: 1.2rem;
+padding-left: 1.2rem;
+padding-right: 1.2rem;
+font-size: 13px;
 }
 
 p.excerpt-paragraph {
@@ -638,13 +709,12 @@ p.excerpt-paragraph {
 	padding-right: 2rem;
 }
 
-div.large-4.small-12.columns.social {
-
+.social {
 width: 11rem;
 padding-right: 0;
-margin-bottom: -1rem;;
+margin-bottom: 8px;
 margin-right: 2rem;
-margin-top: 5.5rem;
+margin-top: 2px;
 }
 
 div.large-8.small-12.columns {
@@ -662,15 +732,135 @@ margin-right: auto;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-padding: 0 15px;
+padding: 0 6.5px;
 line-height: 45px;
-
-font-size: 11.3px;
-
+font-size: 85%;
 }
 
 
 
+.twitter {
+padding-left: 4px;
+margin-left: 4.5rem;
+margin-bottom: 0;
+margin-right: 14rem;
+padding-right: 5.5rem;
+
+}
+
+p.about-me-p {
+font-size: 84.5%;
+text-indent: 0px;
+line-height: 24px;
+}
+
+
+.about-me {
+padding-left: 5.0rem;
+padding-right: 1.5rem;
+margin-bottom: 5rem;
+margin-top: 1.5rem;
+margin-left: 0;
+margin-right: 2rem;
+}
+
+.loop {
+background: #505555;
+margin-bottom: 2rem;
+}
+
+.youtube{
+padding-left: 4.8rem;
+margin-top: 10rem;
+
+}
+
+.adsense4 {
+padding-left: 4.8rem;
+padding-right: 0rem;
+padding-top: 10rem;
+
+}
+
+p.excerpt-paragraph{
+font-size: 14px;
+line-height: 26px;
+text-indent: 20px;
+}
+
+
+div#post-image img.full-img {
+/* max-width: 35rem; */
+max-height: 18rem;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2rem;
+margin-bottom: 2rem;
+max-width: 20rem;
+}
+
+h2.post-title {
+font-size: 20px;
+margin-top: 1.2rem;
+font-family: "Abel", arial, sans-serif;
+/* font-family: Verdana, Geneva, sans-serif; */
+text-align: center;
+text-shadow: 1px 1px 64px #FFF;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+a.older-posts {
+font-size: 32px;
+position: relative;
+float: right;
+font-family: mistral;
+margin-top: 0rem;
+margin-right: -2.8rem;
+}
+
+.sidebar{
+padding-left:0rem;
+}
+
+
+section.post-content p {
+/* text-align: center; */
+text-indent: 40px;
+padding-left: 2rem;
+padding-right: 2rem;
+font-size: 15px;
+line-height: 26px;
+margin-top:3rem;
+margin-bottom: 3rem;
+}
+
+h1.page-title {
+text-align: center;
+color: #F500FF;
+/* font-weight: bolder; */
+text-transform: capitalize;
+text-shadow: 1px 1px 100px #FFF;
+font-family: mistral;
+font-size: 4rem;
+margin-bottom: 6rem;
+
+}
+
+
+.third {
+	margin-right:1rem;
+}
+
+a.newer-posts {
+font-size: 32px;
+font-family: mistral;
+}
+
+
+}
 
  @media only screen and (max-width: 40em) {
 
@@ -760,9 +950,10 @@ h1.post-title {
     font-size: 1.25rem;
     color: #F500FF;
     text-align: center;
-    margin: 4rem;
+    margin: 2rem;
     font-family: Gill Sans MT, Geneva, sans-serif;
     font-weight:600;
+    padding-top: 0rem;
 }
  
 
@@ -777,9 +968,9 @@ div.large-8.small-12.columns {
     margin-bottom:0rem;
 }
 
-div.large-8.small-12.loop {
-    margin-bottom: 4rem;
-    margin-top: 2rem;
+.loop {
+margin-bottom: 1.5rem;
+margin-top: 1rem;
 }
 
 
@@ -788,7 +979,7 @@ p {
     
     margin-left:auto;
     margin-right:auto;
-    margin-top:2rem;
+    margin-top:0rem;
 }
  
 img.author-thumb.full-img {
@@ -845,55 +1036,56 @@ img.danlogo {
     max-height: 50%;
 }
 
-div.small-12.columns.about-me {
-    padding-left: 18px;
-    padding-right: 18px;
-    margin-bottom: 5rem;
+.about-me {
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+margin-left: 0rem;
+margin-top: 15px;
 }
 
-div.small-12.columns.twitter {
+.twitter {
 padding-left: 2rem;
 padding-right: 2rem;
 }
 
 
-div.small-12.columns.adsense1{
+.adsense1{
     padding-left:0px;
     padding-right:0px;
     padding-top: 4rem;
     text-align: center;
 }
 
-div.small-12.columns.adsense1{
+.adsense1{
 display: none;
 }
 
 
-div.small-12.columns.adsense2{
+.adsense2{
 display: none;
 }
 
-div.small-12.columns.adsense3{
+.adsense3{
 display: initial;
 text-align: center;
 margin-top: 2rem;
 margin-bottom: 2rem;
 }
 
-div.small-12.columns.adsense4{
+.adsense4{
 display: none;
 }
 
-div.large-12.columns.social {
-   padding-right:25px; 
-
+.social {
+width: 11rem;
+padding-right: 0;
+margin-top: 0;
 }
 
 .top-bar .toggle-topbar.menu-icon {
-	margin-right: 8px;
+margin-right: 13px;
 
- }
- 
+}
 div.row.first{
  	/* margin-bottom: 2rem; */
 
@@ -918,10 +1110,10 @@ margin-bottom: -4rem;
 
 }
 
- div.large-4.small-12.columns.social {
+.social {
 width: 11rem;
 padding-right: 0;
-margin-top: -2rem;
+margin-top: -.5rem;
 }
 
 h1.page-title{
@@ -937,14 +1129,15 @@ img.danlogo {
     margin-top: -2rem;
 }
 
-p.excerpt-paragraph{
-	font-size: 90%;
-	text-indent: 20px;
+p.excerpt-paragraph {
+font-size: 90%;
+text-indent: 20px;
+line-height: 20px;
 }
 
-div.large-12.columns.youtube {
-padding-left: 2rem;
-padding-right: 2rem;
+.youtube {
+padding-left: 0rem;
+padding-right: 0rem;
 margin-top: 4rem;
 text-align: center;
 }
@@ -958,8 +1151,8 @@ a.about-me {
 }
  */
 
-ul.inline-list.social{
-	margin-left: 25px;
+ul.inline-list.social {
+ margin-left: -1rem; 
 }
 
 section.post-content p {
@@ -968,12 +1161,86 @@ section.post-content p {
 }
 
 
+.inline-list > li {
+list-style: none;
+float: right;
+margin-left: 12px;
+display: block;
+}
+
+div.row.third {
+max-width: 2rem;
+margin-right: 10rem;
+margin-left: 0rem;
+float:right;
+}
+
+.twitter {
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+div#allposts {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
 
 
+.inline-list {
+margin: 0 auto 1.0625rem auto;
+margin-left: 0;
+margin-right: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+}
 
+.small-6 {
+width: 90%;
+}
 
+/* .row .row {
+    float:right;
+} */
 
+.sidebar {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
 
+.post-row{
+padding-left: 0.8rem;
+padding-right: 0.8rem;
+}
+
+nav.pagination {
+    margin-bottom:0rem;
+}
+
+.adsense3{
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.about-me{
+    margin-bottom: 2rem;
+}
+
+.social{
+    margin-bottom: 0rem;
+}
+
+div#post-image img.full-img {
+max-height: 17rem;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
 
 
 
