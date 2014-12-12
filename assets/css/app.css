@@ -217,7 +217,7 @@ display: block;
 
 h6 {
     font-size:2rem;
-    color:#EED866;
+    color: #2FF05D;
     display:block;
 }
 
@@ -239,14 +239,17 @@ div.adsense{
 }
 
 .adsense3{
-    display: none;
-}
-
-.adsense4{
     padding-left:4rem;
     padding-right: 0rem;
     padding-top: 12rem;
 }
+
+
+/* .adsense4{
+    padding-left:4rem;
+    padding-right: 0rem;
+    padding-top: 12rem;
+} */
 
 
 /* div.row{
@@ -330,12 +333,14 @@ main#content.content{
 }
 
 h1.post-title {
-    font-size: 3.25rem;
+    font-size: 2rem;
     color:#F500FF;
     text-align: center; 
     margin:4rem;
-    font-family: Gill Sans MT, Geneva, sans-serif;
+    font-family:  Arrus BT, Gill Sans MT, Geneva, sans-serif;
     padding-top: 2rem;
+    margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 h2.post-title{
@@ -598,28 +603,39 @@ section.copyright a {
 
 }
 
-.adsense5{
-    display: none;
+.adsense-post{
+	margin-top:2rem;
+	margin-bottom: -2rem;
 }
 
+.adsense-post2{
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+
+
+/* .adsense5{
+    display: none;
+}
+ */
 
  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 
 
 
-.adsense1{
+/* .adsense1{
 display: none;
-}
+} */
 
-.adsense5{
+/* .adsense5{
     display: inherit;
     padding-left: 25px;
     margin-left: 4.5rem;
     margin-bottom: 0;
     margin-right: -3rem;
     margin-top: 6rem;
-    }
+    } */
 
 .youtube{
     display: none;
@@ -640,9 +656,11 @@ font-size: 1.8rem;
 color: #F500FF;
 text-align: center;
 margin: 4rem;
-font-family: Gill Sans MT, Geneva, sans-serif;
+font-family:  Arrus BT, Geneva, sans-serif;
 padding-top: 2rem;
 margin-bottom: 2rem;
+margin-left: 2rem;
+margin-right: 2rem;
 }
 
 .post{
@@ -660,13 +678,13 @@ margin-top: 4rem;
 margin-bottom: -2rem;
 }
 
-.adsense2{
+/* .adsense2{
 display: none;
-} 
+}  */
 
-.adsense4{
+/* .adsense4{
 display: none;
-} 
+}  */
 
 h5.about-me{
 margin-left: 0rem;
@@ -860,7 +878,27 @@ font-family: mistral;
 }
 
 
+.columns.post{
+margin-top: -2rem;
 }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
  @media only screen and (max-width: 40em) {
 
@@ -951,9 +989,11 @@ h1.post-title {
     color: #F500FF;
     text-align: center;
     margin: 2rem;
-    font-family: Gill Sans MT, Geneva, sans-serif;
-    font-weight:600;
+    font-family:  Arrus BT, Gill Sans MT, Geneva, sans-serif;
+    /* font-weight:600; */
     padding-top: 0rem;
+    margin-left: 0rem;
+	margin-right: 0rem;
 }
  
 
@@ -1049,33 +1089,34 @@ padding-right: 2rem;
 }
 
 
-.adsense1{
+/* .adsense1{
     padding-left:0px;
     padding-right:0px;
     padding-top: 4rem;
     text-align: center;
-}
+} */
 
-.adsense1{
+ .adsense1{
 display: none;
-}
+} 
 
-
+ 
 .adsense2{
 display: none;
-}
+} 
 
 .adsense3{
 display: initial;
 text-align: center;
-margin-top: 2rem;
+margin-top: -6rem;
 margin-bottom: 2rem;
-}
 
-.adsense4{
-display: none;
 }
-
+ 
+/* .adsense4{
+display: inherit;
+} */
+ 
 .social {
 width: 11rem;
 padding-right: 0;
@@ -1242,7 +1283,19 @@ margin-top: 2rem;
 margin-bottom: 2rem;
 }
 
+div.large-12.small-12.columns {
+	margin-top:.5rem;
+}
+ 
+p {
+font-family: Tahoma, Verdana, Segoe, sans-serif;
+font-style: normal;
+font-variant: normal;
+font-weight: 400;
+line-height: 28px;
+color: #FFF;
 
+}
 
  }
  
