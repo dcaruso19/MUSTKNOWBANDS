@@ -160,8 +160,10 @@ padding-right: 2rem;
 }
 
 .youtube{
-padding-left: 4rem;
 margin-top: 10rem;
+padding-left: 15px;
+padding-right:2rem;
+margin-left:3.2rem;
 }
 
 /*.social {
@@ -614,6 +616,23 @@ margin-bottom: 2rem;
 }
 
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* .adsense5{
     display: none;
 }
@@ -637,11 +656,11 @@ display: none;
     margin-top: 6rem;
     } */
 
-.youtube{
+/* .youtube{
     display: none;
 }
-
-.youtube-tablet{
+ */
+.youtube{
     display: inherit;
     margin-top: 4rem;
     padding-left: 4px;
@@ -788,7 +807,7 @@ margin-bottom: 2rem;
 }
 
 .youtube{
-padding-left: 4.8rem;
+padding-left: 0rem;
 margin-top: 10rem;
 
 }
@@ -1177,8 +1196,8 @@ line-height: 20px;
 }
 
 .youtube {
-padding-left: 0rem;
-padding-right: 0rem;
+padding-left: 2rem;
+padding-right: 2rem;
 margin-top: 4rem;
 text-align: center;
 }
@@ -1262,8 +1281,11 @@ nav.pagination {
 }
 
 .adsense3{
-    padding-left: 0rem;
-    padding-right: 0rem;
+padding-left: 2rem;
+padding-right: 2rem;
+padding-top: 6rem;
+margin-top: 0rem;
+
 }
 
 .about-me{
@@ -1295,6 +1317,10 @@ font-weight: 400;
 line-height: 28px;
 color: #FFF;
 
+}
+
+.youtube{
+	margin-left: 0rem;
 }
 
  }
