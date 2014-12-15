@@ -34,6 +34,24 @@
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5472e7f410a4df99" async="async"></script>
 
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38738531-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
 </head>
 <body class="{{body_class}}">
 <div class="row first">
@@ -97,12 +115,40 @@
             </div>
         </div>
         <div class="row fourth">
+
+
             <div class="large-12 columns twitter-follow">  
                 <a href="https://twitter.com/MustKnowBands" class="twitter-follow-button"   data-show-count="false">Follow @MustKnowBands</a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
                     </script>
             </div>
-        </div> 
+
+             <div class="large-6 columns stumble"> 
+                        <!-- Place this tag where you want the su badge to render -->
+                <su:badge layout="2"></su:badge>
+
+                <!-- Place this snippet wherever appropriate -->
+                <script type="text/javascript">
+                  (function() {
+                    var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+                    li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+                  })();
+                </script>
+            </div>
+
+
+
+            <div class="large-6 columns facebook-like">  
+
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmustknowbands%3Fref%3Dhl&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+
+            </div>
+        
+                                
+     
+    </div> 
+
         <div class="row fifth">
             <div class="large-12 columns search">
                 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -170,6 +216,7 @@
 	<script src="{{asset "js/vendor/jquery.js"}}"></script>
     <script src="{{asset "js/foundation.min.js"}}"></script>
     <script src="{{asset "js/foundation/foundation.interchange.js"}}"></script>
+   
 	
 		
     <script>
