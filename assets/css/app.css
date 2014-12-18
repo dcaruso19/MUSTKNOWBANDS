@@ -278,14 +278,14 @@ div.adsense{
 } */
 
 
-/* div.row{
+/*  div.row{
 background:#00CED1;
 }
-
-div.row.second{
-background:black;
-}
- */
+*/
+/* div.row.second{
+margin-top:2px;
+} */
+ 
 time.post-date {
     color:#2FF05D;
     margin-left:1rem;
@@ -695,7 +695,9 @@ margin-bottom: -2px;
 }
 
 
-
+.second{
+	margin-top: 10px;
+}
 
 
 
@@ -703,6 +705,38 @@ margin-bottom: -2px;
 
 
  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+li.name{
+	background: black;
+
+}
+
+
+
+
+.top-bar .toggle-topbar.menu-icon {
+top: 10%;
+margin-top: 0px;
+margin-right: 2rem;
+margin-bottom: -2rem;
+}
+
+
+/*.third{
+	margin-bottom: 12px;
+}*/
+
+
+/* 
+ div.row.third{
+	display: none;
+} */
+
+div.row.fourth{
+	display: none;
+} 
+
 
 
 .icons{
@@ -782,7 +816,24 @@ div.stumble-fb {
 }
 
 
+input#search-field {
+width: 38%;
+max-width: 40%;
+}
 
+img.full-img {
+/*max-height: 25px;*/
+max-width: 25px;
+}
+
+img.alt-logo.full-img{
+
+max-width: 100%;	
+}
+
+/*.social{
+	bottom: 5px;
+}*/
 
 /* .adsense1{
 display: none;
@@ -856,7 +907,8 @@ margin-right: auto;
 margin-left: 2rem;
 height: auto;
 max-width: 100%;
-
+margin-bottom: 2rem;
+margin-top: -2rem;
 }
 
 .logo{
@@ -1246,6 +1298,7 @@ img.danlogo.full-img {
     width: 100%;
     max-width: 28%;
     max-height: 50%;
+    margin-left: 1rem;
 }
 
 img.danlogo {
@@ -1253,6 +1306,7 @@ img.danlogo {
     width: 100%;
     max-width: 28%;
     max-height: 50%;
+
 }
 
 .about-me {
@@ -1391,7 +1445,7 @@ display: block;
 div.row.third {
 margin-right: 0rem;
 float: right;
-margin-bottom: -1rem;
+margin-bottom: -28px;
 }
 
 .twitter {
