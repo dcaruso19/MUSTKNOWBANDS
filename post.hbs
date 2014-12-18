@@ -6,6 +6,29 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
+  {{#contentFor "meta"}}
+    <!-- Classic Meta Tags -->
+    <title>{{title}}</title>
+    <meta name="description" content="{{excerpt characters="220"}}">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{title}}"/>
+    <meta property="og:description" content="{{excerpt characters="220"}}"/>
+    <meta property="og:site_name" content="Must Know Bands!"/>
+    <meta property="og:url" content="https://mustknowbands.com{{url}}"/>
+    <meta property="og:image" content="http://www.mustknowbands.com/assets/img/mkb-main.png?v=365c6194be"/>
+    <meta property="fb:admins" content="1523094524592946"/>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="{{title}}"/>
+    <meta name="twitter:description" content="{{excerpt characters="220"}}"/>
+    <meta name="twitter:image" content="http://www.mustknowbands.com/assets/img/mkb-main.png?v=365c6194be"/>
+    <meta name="twitter:site" content="@mustknowbands"/>
+    <meta name="twitter:creator" content="@dansomedevil23"/>
+  {{/contentFor}}
+
 
 <main class="content" role="main">
     <div class="row post-row">
