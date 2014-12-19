@@ -169,6 +169,15 @@ padding-right:2rem;
 margin-left:2rem;
 }
 
+.youtube-button{
+	margin-top: 4px;
+	margin-bottom: -4px;
+}
+
+/* .yt-thumb img {
+border-radius: 0;
+} */
+
 /*.social {
     padding-right:10px; 
 
