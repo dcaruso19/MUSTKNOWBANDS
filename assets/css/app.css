@@ -174,9 +174,9 @@ margin-left:2rem;
 	margin-bottom: -4px;
 }
 
-/* .yt-thumb img {
+ .yt-thumb img {
 border-radius: 0;
-} */
+} 
 
 /*.social {
     padding-right:10px; 
@@ -709,7 +709,9 @@ margin-bottom: -2px;
 }
 
 
-
+/* span.yt-thumb-clip img {
+	border-radius: 0;
+} */
 
 
 
