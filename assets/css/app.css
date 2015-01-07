@@ -99,7 +99,7 @@ img.author-thumb.full-img {
 
 div.large-12.small-12.columns {
     margin-bottom:5rem;
-    background:#2C2C2C;
+    background:#0F0F0F;
 }
 /* 
  .embed-container {
@@ -156,7 +156,7 @@ div.large-12.small-12.columns.back-logo {
 
 
 .loop {
-    background:#2C2C2C;
+    background:#0F0F0F;
     margin-bottom: 2rem;
     border-radius: 14px;
 }
@@ -745,6 +745,14 @@ margin-bottom: -2px;
 } */
 
 
+.columns.post {
+	border-radius: 2rem;
+}
+
+
+
+
+
 
  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
@@ -1078,7 +1086,7 @@ margin-right: 2rem;
 }
 
 .loop {
-background: #2C2C2C;
+background: #0F0F0F;
 margin-bottom: 2rem;
 }
 
