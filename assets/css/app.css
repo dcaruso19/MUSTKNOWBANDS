@@ -99,7 +99,7 @@ img.author-thumb.full-img {
 
 div.large-12.small-12.columns {
     margin-bottom:5rem;
-    background:#0F0F0F;
+    background: #1B1B1B;
 }
 /* 
  .embed-container {
@@ -156,7 +156,7 @@ div.large-12.small-12.columns.back-logo {
 
 
 .loop {
-    background:#0F0F0F;
+    background: #1B1B1B;
     margin-bottom: 2rem;
     border-radius: 14px;
 }
@@ -750,7 +750,12 @@ margin-bottom: -2px;
 }
 
 
-
+.sound{
+margin-left: 2rem;
+margin-bottom: 0;
+padding-right: 2rem;
+margin-top: 5rem;
+}
 
 
 
@@ -1003,7 +1008,7 @@ margin-top: -2rem;
 }
 
 .loop {
-background: #505555;
+background: #1B1B1B;
 margin-bottom: 2rem;
 margin-left: 2rem;
 margin-right: 14rem;
@@ -1086,7 +1091,7 @@ margin-right: 2rem;
 }
 
 .loop {
-background: #0F0F0F;
+background: #1B1B1B;
 margin-bottom: 2rem;
 }
 
@@ -1186,7 +1191,13 @@ margin-top: -2rem;
 }
 
 
-
+.sound{
+	padding-left: 4px;
+margin-left: 4.5rem;
+margin-bottom: 0;
+margin-right: 14rem;
+padding-right: 5.5rem;
+}
 
 
 
@@ -1640,6 +1651,14 @@ color: #FFF;
 
 .spotify{
     margin-top: 6rem;
+}
+
+.sound{
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
 }
 
  }
